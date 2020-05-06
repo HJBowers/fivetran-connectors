@@ -31,7 +31,7 @@ It's important that you first read the entire article and only later act on it.
 Working with an ETL process, you'll be required to setup account/services for each stage of the process.
 
 **E**xtract - source related info (DB, API, IP Whitelisting)  
-**T**ransform - data-pipeline related info (account, connector)  
+**T**ransform - Fivetran related info (account, connector)  
 **L**oad - destination related info (DWH, IP Whitelisting)  
 
 **Source**
@@ -41,9 +41,7 @@ Working with an ETL process, you'll be required to setup account/services for ea
 
 **Destination**
   - DWH Account
-  - Connected Warehouse
-  - Connector setup
-      - secrets
+  - IP Whitelisting
 
 **Function**
   - Framework of your choice (NodeJS, Python, Go, etc)
@@ -51,13 +49,19 @@ Working with an ETL process, you'll be required to setup account/services for ea
 
 **Fivetran**
   - Fivetran connector
+  - Connected Warehouse
+  - Connector setup
+      - schema
+      - secrets
+      - trigger function url
 
 ## GCP & Fivetran Data flow
 
 **Fivetran**
-- triggers a function on GCP
+- using a service-account to trigger ayour function on GCP
 
 **Google Cloud Functions**
+- authenticate the service-account triggering the function
 - execute your code (function)
 
 **Function (your code)**
@@ -72,7 +76,7 @@ Working with an ETL process, you'll be required to setup account/services for ea
     - payload
 
 **Fivetran**
-- capture returned formatted response
+- capture the returned (formatted response)
 - insert / update / delete based on the response payload/structure
 - deduplication/sorting/casting/etc
 - push data to DWH
