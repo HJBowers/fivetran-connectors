@@ -1,0 +1,294 @@
+{
+  "state": {
+    "users": "2018-01-02T00:00:01Z"
+  },
+  "schema": {
+    "users": {
+      "primary_key": [
+        "id"
+      ]
+    }
+  },
+  "insert": {
+    "users": [
+      {
+        "id": "00upqku1thDn9syac0h7",
+        "status": "PROVISIONED",
+        "created": "2020-02-14T00:20:15.000Z",
+        "activated": "2020-02-14T00:20:15.000Z",
+        "statusChanged": "2020-02-14T00:20:15.000Z",
+        "lastLogin": null,
+        "lastUpdated": "2020-02-14T00:20:15.000Z",
+        "passwordChanged": null,
+        "type": {
+          "id": "otypkqug4nWiBs1MC0h7"
+        },
+        "profile": {
+          "firstName": "Thursday",
+          "lastName": "Tester",
+          "mobilePhone": null,
+          "secondEmail": null,
+          "department": "IT",
+          "login": "thursday.tester@fivetran.com",
+          "email": "thursday.tester@fivetran.com"
+        },
+        "credentials": {
+          "provider": {
+            "type": "OKTA",
+            "name": "OKTA"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://fivetraneappoc.oktapreview.com/api/v1/users/00upqku1thDn9syac0h7"
+          }
+        }
+      },
+      {
+        "id": "00ur34lybbt41quU40h7",
+        "status": "PROVISIONED",
+        "created": "2020-04-21T22:36:38.000Z",
+        "activated": "2020-04-29T22:58:51.000Z",
+        "statusChanged": "2020-04-29T22:58:51.000Z",
+        "lastLogin": null,
+        "lastUpdated": "2020-04-29T22:58:51.000Z",
+        "passwordChanged": "2020-04-21T22:36:47.000Z",
+        "type": {
+          "id": "otypkqug4nWiBs1MC0h7"
+        },
+        "profile": {
+          "firstName": "Fivetran",
+          "lastName": "User",
+          "mobilePhone": null,
+          "secondEmail": null,
+          "login": "fivetran.user@fivetran.com",
+          "email": "fivetran.user@fivetran.com"
+        },
+        "credentials": {
+          "provider": {
+            "type": "OKTA",
+            "name": "OKTA"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://fivetraneappoc.oktapreview.com/api/v1/users/00ur34lybbt41quU40h7"
+          }
+        }
+      },
+      {
+        "id": "00upkqug5aFZmY3Z30h7",
+        "status": "ACTIVE",
+        "created": "2020-02-04T17:33:33.000Z",
+        "activated": null,
+        "statusChanged": "2020-02-04T17:49:54.000Z",
+        "lastLogin": "2020-05-04T20:12:57.000Z",
+        "lastUpdated": "2020-02-04T17:49:54.000Z",
+        "passwordChanged": "2020-02-04T17:49:54.000Z",
+        "type": {
+          "id": "otypkqug4nWiBs1MC0h7"
+        },
+        "profile": {
+          "firstName": "Kevin",
+          "lastName": "Connole",
+          "mobilePhone": null,
+          "secondEmail": null,
+          "login": "kevin@fivetran.com",
+          "email": "kevin@fivetran.com"
+        },
+        "credentials": {
+          "password": {},
+          "recovery_question": {
+            "question": "What was your grandmother's favorite dessert?"
+          },
+          "provider": {
+            "type": "OKTA",
+            "name": "OKTA"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://fivetraneappoc.oktapreview.com/api/v1/users/00upkqug5aFZmY3Z30h7"
+          }
+        }
+      },
+      {
+        "id": "00upp1dw6uLncMtUj0h7",
+        "status": "ACTIVE",
+        "created": "2020-02-11T18:43:17.000Z",
+        "activated": "2020-02-11T18:43:18.000Z",
+        "statusChanged": "2020-02-11T18:43:18.000Z",
+        "lastLogin": null,
+        "lastUpdated": "2020-02-28T17:22:45.000Z",
+        "passwordChanged": "2020-02-11T18:43:18.000Z",
+        "type": {
+          "id": "otypkqug4nWiBs1MC0h7"
+        },
+        "profile": {
+          "firstName": "Isaac",
+          "lastName": "Brock",
+          "mobilePhone": null,
+          "secondEmail": null,
+          "department": "Sales",
+          "title": "MyNEWESTtitle",
+          "login": "isaac@fivetran.com",
+          "email": "isaac@fivetran.com"
+        },
+        "credentials": {
+          "password": {},
+          "provider": {
+            "type": "OKTA",
+            "name": "OKTA"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://fivetraneappoc.oktapreview.com/api/v1/users/00upp1dw6uLncMtUj0h7"
+          }
+        }
+      },
+      {
+        "id": "00upp1jo45LDQFFrG0h7",
+        "status": "ACTIVE",
+        "created": "2020-02-11T18:46:16.000Z",
+        "activated": "2020-02-11T18:46:16.000Z",
+        "statusChanged": "2020-02-11T18:46:16.000Z",
+        "lastLogin": null,
+        "lastUpdated": "2020-02-11T18:46:16.000Z",
+        "passwordChanged": "2020-02-11T18:46:16.000Z",
+        "type": {
+          "id": "otypkqug4nWiBs1MC0h7"
+        },
+        "profile": {
+          "firstName": "IT",
+          "lastName": "Hero",
+          "mobilePhone": null,
+          "secondEmail": null,
+          "department": "IT",
+          "login": "it.hero@fivetran.com",
+          "email": "it.hero@fivetran.com"
+        },
+        "credentials": {
+          "password": {},
+          "provider": {
+            "type": "OKTA",
+            "name": "OKTA"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://fivetraneappoc.oktapreview.com/api/v1/users/00upp1jo45LDQFFrG0h7"
+          }
+        }
+      },
+      {
+        "id": "00upzmfxpa2iH0lO50h7",
+        "status": "ACTIVE",
+        "created": "2020-02-28T18:01:18.000Z",
+        "activated": "2020-02-28T18:01:18.000Z",
+        "statusChanged": "2020-02-28T18:01:22.000Z",
+        "lastLogin": null,
+        "lastUpdated": "2020-02-28T18:04:43.000Z",
+        "passwordChanged": "2020-02-28T18:01:22.000Z",
+        "type": {
+          "id": "otypkqug4nWiBs1MC0h7"
+        },
+        "profile": {
+          "firstName": "Friday",
+          "lastName": "Tester",
+          "mobilePhone": null,
+          "secondEmail": null,
+          "department": "Sales",
+          "title": "ReallyNewtitle",
+          "login": "friday.tester@fivetran.com",
+          "email": "friday.tester@fivetran.com"
+        },
+        "credentials": {
+          "password": {},
+          "provider": {
+            "type": "OKTA",
+            "name": "OKTA"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://fivetraneappoc.oktapreview.com/api/v1/users/00upzmfxpa2iH0lO50h7"
+          }
+        }
+      },
+      {
+        "id": "00uqtt90ehBCx2NWj0h7",
+        "status": "ACTIVE",
+        "created": "2020-04-08T18:38:39.000Z",
+        "activated": "2020-04-08T18:38:40.000Z",
+        "statusChanged": "2020-05-04T22:37:35.000Z",
+        "lastLogin": "2020-05-04T22:37:35.000Z",
+        "lastUpdated": "2020-05-04T22:37:35.000Z",
+        "passwordChanged": "2020-05-04T22:37:35.000Z",
+        "type": {
+          "id": "otypkqug4nWiBs1MC0h7"
+        },
+        "profile": {
+          "firstName": "David",
+          "lastName": "Voss",
+          "mobilePhone": null,
+          "secondEmail": "",
+          "login": "david.voss@fivetran.com",
+          "email": "david.voss@fivetran.com"
+        },
+        "credentials": {
+          "password": {},
+          "recovery_question": {
+            "question": "Who is your favorite sports player?"
+          },
+          "provider": {
+            "type": "OKTA",
+            "name": "OKTA"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://fivetraneappoc.oktapreview.com/api/v1/users/00uqtt90ehBCx2NWj0h7"
+          }
+        }
+      },
+      {
+        "id": "00uqtvttr3Eb27b1U0h7",
+        "status": "ACTIVE",
+        "created": "2020-04-08T20:40:47.000Z",
+        "activated": "2020-04-08T20:40:47.000Z",
+        "statusChanged": "2020-04-20T18:24:42.000Z",
+        "lastLogin": "2020-05-04T14:34:09.000Z",
+        "lastUpdated": "2020-04-20T18:24:42.000Z",
+        "passwordChanged": "2020-04-20T18:24:42.000Z",
+        "type": {
+          "id": "otypkqug4nWiBs1MC0h7"
+        },
+        "profile": {
+          "firstName": "Papaya",
+          "lastName": "Testuser",
+          "mobilePhone": null,
+          "secondEmail": null,
+          "login": "talre@papayaglobal.com",
+          "email": "talre@papayaglobal.com"
+        },
+        "credentials": {
+          "password": {},
+          "recovery_question": {
+            "question": "What is the food you least liked as a child?"
+          },
+          "provider": {
+            "type": "OKTA",
+            "name": "OKTA"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://fivetraneappoc.oktapreview.com/api/v1/users/00uqtvttr3Eb27b1U0h7"
+          }
+        }
+      }
+    ]
+  },
+  "hasMore": false
+}

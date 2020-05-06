@@ -1,0 +1,10 @@
+{
+  "agent": "google_cloud_function/ingestion_commoner/google_cloud_function",
+  "state": {
+    "cursor": "2018-01-01T00:00:00Z"
+  },
+  "secrets": {
+    "apiKey": "00_pYosR_1ah650UTWlG7KWATbR4NPsVzpaNtPs3sw",
+    "origin": "GCP"
+  }  
+}
