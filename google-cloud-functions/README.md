@@ -1,9 +1,9 @@
 ![](https://static.slab.com/prod/uploads/ds8zyc5n/posts/images/4k3gGePqOWSqOX3DibKLJ4bV.png)
 
-# Intro
-```
-It's important that you first read the entire article and only later act on it.
-```
+# Fivetran
+## Intro
+Fivetran cloud function connectors improve on DIY with: Built-in version control, testing and infrastructure management. Compatibility with virtual private cloud (VPC) Fewer engineering resources required. 
+Fivetran expertise delivering incremental changes.
 
 ## Functions
 ### How Functions work?
@@ -16,14 +16,23 @@ Fivetran will create a dedicate connector based on &quot;few reasons&quot;, most
 
 ```
 - Dedicated (API) Connectors: Jira Cloud, GreenHouse, SalesForce, etc.
-- Customized (API) Connectors: Okta, eDX, COVID-19, etc. (basically any REST API service that you wish to pull/extract/mine data from)
+- Customized (API) Connectors: Okta, eDX, COVID-19, etc. 
+(basically any REST API service that you wish to pull/extract/mine data from)
 ```
 
-Building, maintaining, and supporting your own data-pipeline connector is tidy and... and... this is why you&#39;ll choose to use Fivetran as your data-pipeline platform.
+> Building, maintaining, and supporting your own data-pipeline connector is tidy and... and... this is why you&#39;ll choose to use Fivetran as your data-pipeline platform.
 
 ## Fivetran Google Cloud Function Implementation
+```
+It's important that you first read the entire article and only later act on it.
+```
 
 ### Prerequisits
+Working with an ETL process, you'll be required to setup account/services for each stage of the process.
+
+**E**xtract - source related info (DB, API, IP Whitelisting)  
+**T**ransform - data-pipeline related info (account, connector)  
+**L**oad - destination related info (DWH, IP Whitelisting)  
 
 **Source**
   - REST API Schema definitions (layout)
@@ -31,7 +40,7 @@ Building, maintaining, and supporting your own data-pipeline connector is tidy a
   - Common HTTP responses (coding, limits, etc)
 
 **Destination**
-  - Fivetran Account
+  - DWH Account
   - Connected Warehouse
   - Connector setup
       - secrets
@@ -40,7 +49,10 @@ Building, maintaining, and supporting your own data-pipeline connector is tidy a
   - Framework of your choice (NodeJS, Python, Go, etc)
   - Executable (the function/handler/etc)
 
-### GCP & Fivetran Data flow
+**Fivetran**
+  - Fivetran connector
+
+## GCP & Fivetran Data flow
 
 **Fivetran**
 - triggers a function on GCP
@@ -68,7 +80,7 @@ Building, maintaining, and supporting your own data-pipeline connector is tidy a
 **Fivetran** (additional steps)
 - hasMore? (is there a need to run again?)
 
-# Fivetran GCF Connector Setup
+# Fivetran Google Cloud Platform Connector Setup
 
 ## Steps required on GCP
 
