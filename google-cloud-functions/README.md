@@ -2,33 +2,22 @@
 
 # Fivetran
 ## Intro
-Fivetran cloud function connectors improve on DIY with: Built-in version control, testing and infrastructure management. Compatibility with virtual private cloud (VPC) Fewer engineering resources required. 
-Fivetran expertise delivering incremental changes.
+Fivetran cloud function connectors enables the DIY capabilities for our customers to work with sources for which the connectors are not prebuilt by Fivetran yet. For further details on functions please feel free to read: https://fivetran.com/docs/functions. Here we will focus primarily on Google Cloud Functions.
 
 ## Functions
 ### How Functions work?
 
-I've found a very good [article](https://medium.com/@iromin/google-cloud-functions-tutorial-what-is-google-cloud-functions-8796fa07fc7a) explaining the architecture, use-case, etc. So there&#39;s no need to re-invent the wheel here.
-
-### Who needs a Function (connector)?
-
-Fivetran will create a dedicate connector based on &quot;few reasons&quot;, mostly financial reasons (need, demand, cost, etc). When a customer is unable to locate a &quot;dedicated connector&quot; it means that the customer is required to build/create one themselves.
-
-```
-- Dedicated (API) Connectors: Jira Cloud, GreenHouse, SalesForce, etc.
-- Customized (API) Connectors: Okta, eDX, COVID-19, etc. 
-(basically any REST API service that you wish to pull/extract/mine data from)
-```
-
-> Building, maintaining, and supporting your own data-pipeline connector is tidy and... and... this is why you&#39;ll choose to use Fivetran as your data-pipeline platform.
+There is a very good [article](https://medium.com/@iromin/google-cloud-functions-tutorial-what-is-google-cloud-functions-8796fa07fc7a) explaining the architecture, use-case, etc. 
 
 ## Fivetran Google Cloud Function Implementation
 ```
-It's important that you first read the entire article and only later act on it.
+Note: Please read through the entire article prior to writing/testing a google cloud function.
 ```
 
-### Prerequisits
-Working with an ETL process, you'll be required to setup account/services for each stage of the process.
+### Prerequisite
+Setup of account/services will be required for each stage of the process.
+
+### Definitions and key terminology
 
 **E**xtract - source related info (DB, API, IP Whitelisting)  
 **T**ransform - Fivetran related info (account, connector)  
@@ -58,7 +47,7 @@ Working with an ETL process, you'll be required to setup account/services for ea
 ## GCP & Fivetran Data flow
 
 **Fivetran**
-- using a service-account to trigger ayour function on GCP
+- using a service-account to trigger your function on GCP
 
 **Google Cloud Functions**
 - authenticate the service-account triggering the function
